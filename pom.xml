@@ -38,4 +38,17 @@
             </plugin>
         </plugins>
     </build>
+    
+     <distributionManagement>
+        <repository>    
+          <id>maven</id>
+            <name>maven-releases</name>
+            <url>http://nexus:8081/repository/maven-releases/</url>            
+        </repository>        
+        <snapshotRepository>  
+          <id>maven</id>
+            <name>maven-snapshot</name>
+            <url>http://nexus:8081/repository/maven-snapshot/</url>            
+        </snapshotRepository>
+    </distributionManagement>
 </project>
